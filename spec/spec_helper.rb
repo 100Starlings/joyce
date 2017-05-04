@@ -50,10 +50,6 @@ class Time
 end
 
 RSpec.configure do |config|
-  # Prettyfying
-  config.color_enabled  = true
-  config.formatter      = 'documentation'
-  
   # Cleaning database
   config.before(:suite) do
     DatabaseCleaner.strategy = :transaction
