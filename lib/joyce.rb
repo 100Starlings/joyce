@@ -12,6 +12,8 @@ require 'joyce/stream_subscriber'
 require 'joyce/verb'
 require 'byebug'
 
+require 'rails/observers/active_model/observing'
+
 if defined?(ActiveRecord)
   ActiveRecord::Base.send(:include, Joyce::Behaviour)
 end
