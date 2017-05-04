@@ -149,14 +149,14 @@ describe Joyce do
           it "should add activity to the default :#{only} stream" do
             expect{
               subject
-            }.to change{ @params[only].activity_stream.all }
+            }.to change{ @params[only].activity_stream.count }
           end
 
           only_values.reject{ |i| i == only }.each do |neg_only|
             it "should not add activity to the default :#{neg_only} stream" do
               expect{
                 subject
-              }.not_to change{ @params[neg_only].activity_stream.all }
+              }.not_to change{ @params[neg_only].activity_stream.count }
             end
           end
         end
@@ -169,19 +169,19 @@ describe Joyce do
         it "should add activity to the default :actor stream" do
           expect{
             subject
-          }.to change{ @params[:actor].activity_stream.all }
+          }.to change{ @params[:actor].activity_stream.count }
         end
         
         it "should add activity to the default :verb stream" do
           expect{
             subject
-          }.to change{ @params[:verb].activity_stream.all }
+          }.to change{ @params[:verb].activity_stream.count }
         end
 
         it "should not add activity to the default :obj stream" do
           expect{
             subject
-          }.not_to change{ @params[:obj].activity_stream.all }
+          }.not_to change{ @params[:obj].activity_stream.count }
         end
       end
     end

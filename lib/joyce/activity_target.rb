@@ -15,7 +15,7 @@ module Joyce
     private
     
     def init
-      self.name ||= :target
+      self.name ||= 'target'
     end
   end
 end
