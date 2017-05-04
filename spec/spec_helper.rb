@@ -9,7 +9,7 @@ require 'joyce'
 
 require 'generators/joyce/templates/migration'
 require 'database_cleaner'
-require 'ruby-debug'
+require 'byebug'
 require 'timecop'
 require 'factory_girl'
 FactoryGirl.find_definitions

@@ -10,6 +10,7 @@ require 'joyce/behaviour/owner'
 require 'joyce/behaviour/subscriber'
 require 'joyce/stream_subscriber'
 require 'joyce/verb'
+require 'byebug'
 
 if defined?(ActiveRecord)
   ActiveRecord::Base.send(:include, Joyce::Behaviour)

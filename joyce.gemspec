@@ -21,7 +21,7 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency('database_cleaner')
   # See http://blog.wyeworks.com/2011/11/1/ruby-1-9-3-and-ruby-debug for info on getting
   #  ruby-debug working with Ruby 1.9.3-p0
-  gem.add_development_dependency('ruby-debug19')
+  gem.add_development_dependency('byebug')
   gem.add_development_dependency('timecop')
   gem.add_development_dependency('factory_girl')
   gem.add_development_dependency('yard')
