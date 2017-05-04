@@ -12,8 +12,8 @@ module Joyce
     validates_presence_of :actor, :verb
     
     extend Joyce::Scopes
-    default_scope order("joyce_activities.created_at DESC")
-    
+    default_scope {order("joyce_activities.created_at DESC")}
+
     # Returns an array of targets for the given name.
     # 
     # @return [Array] the targets for the given name.
